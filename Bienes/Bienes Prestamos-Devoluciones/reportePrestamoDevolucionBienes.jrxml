@@ -104,7 +104,7 @@ WHERE
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
-					<text><![CDATA[Código;]]></text>
+					<text><![CDATA[Código:]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="59" y="30" width="100" height="20"/>
