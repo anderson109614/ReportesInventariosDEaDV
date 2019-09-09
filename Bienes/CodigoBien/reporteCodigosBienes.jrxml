@@ -7,12 +7,13 @@
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
 	<queryString>
-		<![CDATA[select b.identificador, tp.nombre, b.serie_identificacion, b.modelo, b.marca, b.color, b.material, b.dimensiones, b.valor_compra, c.codigo, c.fecha, c.estado
+		<![CDATA[select distinct(c.codigo), b.identificador, tp.nombre, b.serie_identificacion, b.modelo, b.marca, b.color, b.material, b.dimensiones, b.valor_compra, c.fecha
 from bienes b
 inner JOIN codigos c on b.id = c.id_bien
 inner JOIN tipo_bien tp on b.id_tipo_bien = tp.id
 where b.id = $P{id_bien}]]>
 	</queryString>
+	<field name="codigo" class="java.lang.String"/>
 	<field name="identificador" class="java.lang.Integer"/>
 	<field name="nombre" class="java.lang.String"/>
 	<field name="serie_identificacion" class="java.lang.String"/>
@@ -22,9 +23,7 @@ where b.id = $P{id_bien}]]>
 	<field name="material" class="java.lang.String"/>
 	<field name="dimensiones" class="java.lang.String"/>
 	<field name="valor_compra" class="java.lang.Float"/>
-	<field name="codigo" class="java.lang.String"/>
 	<field name="fecha" class="java.sql.Date"/>
-	<field name="estado" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -149,44 +148,32 @@ where b.id = $P{id_bien}]]>
 	<columnHeader>
 		<band height="20" splitType="Stretch">
 			<staticText>
-				<reportElement x="77" y="0" width="141" height="20"/>
+				<reportElement x="139" y="0" width="141" height="20"/>
 				<textElement textAlignment="Justified">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Código]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="218" y="0" width="140" height="20"/>
+				<reportElement x="280" y="0" width="140" height="20"/>
 				<textElement textAlignment="Justified">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Fecha Modificación]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="358" y="0" width="140" height="20"/>
-				<textElement textAlignment="Justified">
-					<font size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Estado]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
 		<band height="20" splitType="Stretch">
 			<textField>
-				<reportElement x="77" y="0" width="141" height="20"/>
+				<reportElement x="139" y="0" width="141" height="20"/>
 				<textElement textAlignment="Justified"/>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{codigo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="218" y="0" width="140" height="20"/>
+				<reportElement x="280" y="0" width="140" height="20"/>
 				<textElement textAlignment="Justified"/>
 				<textFieldExpression class="java.util.Date"><![CDATA[$F{fecha}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="358" y="0" width="140" height="20"/>
-				<textElement textAlignment="Justified"/>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{estado}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
