@@ -44,112 +44,112 @@ WHERE
 		<groupHeader>
 			<band height="113">
 				<textField>
-					<reportElement x="159" y="10" width="100" height="20"/>
+					<reportElement x="123" y="11" width="139" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{codigo}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="159" y="30" width="100" height="20"/>
+					<reportElement x="123" y="31" width="139" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.Integer"><![CDATA[$F{identificador}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="159" y="50" width="110" height="20"/>
+					<reportElement x="123" y="51" width="139" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{serie_identificacion}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="401" y="10" width="100" height="20"/>
+					<reportElement x="376" y="11" width="149" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{modelo}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="159" y="70" width="100" height="20"/>
+					<reportElement x="123" y="71" width="139" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{marca}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="401" y="30" width="100" height="20"/>
+					<reportElement x="376" y="31" width="149" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{color}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="401" y="50" width="100" height="20"/>
+					<reportElement x="376" y="51" width="149" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{material}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="401" y="70" width="100" height="20"/>
+					<reportElement x="376" y="71" width="149" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{dimensiones}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="59" y="10" width="100" height="20"/>
+					<reportElement x="23" y="11" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Código:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="59" y="30" width="100" height="20"/>
+					<reportElement x="23" y="31" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Identificador:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="59" y="50" width="100" height="20"/>
+					<reportElement x="23" y="51" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Serie Identificación:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="301" y="10" width="100" height="20"/>
+					<reportElement x="276" y="11" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Modelo:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="59" y="70" width="100" height="20"/>
+					<reportElement x="23" y="71" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Marca:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="301" y="30" width="100" height="20"/>
+					<reportElement x="276" y="31" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Color:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="301" y="50" width="100" height="20"/>
+					<reportElement x="276" y="51" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Material:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="301" y="70" width="100" height="20"/>
+					<reportElement x="276" y="71" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
@@ -173,7 +173,7 @@ WHERE
 	<detail>
 		<band height="182" splitType="Stretch">
 			<textField>
-				<reportElement x="123" y="25" width="125" height="20"/>
+				<reportElement x="123" y="25" width="139" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
@@ -187,35 +187,35 @@ WHERE
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{observacion_entrega}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="123" y="85" width="125" height="20"/>
+				<reportElement x="123" y="85" width="139" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{cedulaPrestamo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="123" y="105" width="125" height="20"/>
+				<reportElement x="123" y="105" width="139" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{personaPrestamo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="123" y="45" width="100" height="20"/>
+				<reportElement x="123" y="45" width="139" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{cedulaEncargado}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="123" y="65" width="100" height="20"/>
+				<reportElement x="123" y="65" width="139" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{encargado}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="376" y="25" width="130" height="20"/>
+				<reportElement x="376" y="25" width="179" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
@@ -229,14 +229,14 @@ WHERE
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{observacion_recibido}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="376" y="45" width="100" height="20"/>
+				<reportElement x="376" y="45" width="179" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{cedulaDevolucion}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="376" y="65" width="130" height="20"/>
+				<reportElement x="376" y="65" width="179" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
@@ -250,7 +250,7 @@ WHERE
 				<text><![CDATA[Fecha:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="23" y="125" width="228" height="20"/>
+				<reportElement x="23" y="125" width="100" height="20"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>

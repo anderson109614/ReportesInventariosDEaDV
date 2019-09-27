@@ -57,89 +57,89 @@ AND c.estado = 'Activado']]>
 	<group name="Mantenimientos">
 		<groupExpression><![CDATA[$F{mantenimiento}]]></groupExpression>
 		<groupHeader>
-			<band height="128">
+			<band height="116">
 				<textField>
-					<reportElement x="206" y="34" width="100" height="20"/>
+					<reportElement x="105" y="18" width="145" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{codigo}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="206" y="54" width="100" height="20"/>
+					<reportElement x="105" y="38" width="145" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.Integer"><![CDATA[$F{identificador}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="206" y="74" width="100" height="20"/>
+					<reportElement x="105" y="58" width="145" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{modelo}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="206" y="94" width="100" height="20"/>
+					<reportElement x="105" y="78" width="145" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{marca}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="451" y="34" width="100" height="20"/>
+					<reportElement x="350" y="18" width="205" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{color}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="451" y="54" width="100" height="20"/>
+					<reportElement x="350" y="38" width="205" height="20"/>
 					<textElement>
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{dimensiones}]]></textFieldExpression>
 				</textField>
 				<line>
-					<reportElement x="0" y="119" width="555" height="1"/>
+					<reportElement x="0" y="103" width="555" height="1"/>
 				</line>
 				<staticText>
-					<reportElement x="106" y="34" width="100" height="20"/>
+					<reportElement x="5" y="18" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
-					<text><![CDATA[Código;]]></text>
+					<text><![CDATA[Código:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="106" y="54" width="100" height="20"/>
+					<reportElement x="5" y="38" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
-					<text><![CDATA[Serie Identificación:]]></text>
+					<text><![CDATA[Serie: Identificación:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="106" y="74" width="100" height="20"/>
+					<reportElement x="5" y="58" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Modelo:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="106" y="94" width="100" height="20"/>
+					<reportElement x="5" y="78" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Marca:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="351" y="34" width="100" height="20"/>
+					<reportElement x="250" y="18" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
 					<text><![CDATA[Color:]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="351" y="54" width="100" height="20"/>
+					<reportElement x="250" y="38" width="100" height="20"/>
 					<textElement>
 						<font size="12" isBold="true"/>
 					</textElement>
@@ -160,56 +160,56 @@ AND c.estado = 'Activado']]>
 	<detail>
 		<band height="133" splitType="Stretch">
 			<textField>
-				<reportElement x="105" y="22" width="124" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="105" y="22" width="145" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{mantenimiento}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="105" y="82" width="303" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="105" y="82" width="303" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{descripcion}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="105" y="62" width="124" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="105" y="62" width="145" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{estado}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="105" y="102" width="303" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="105" y="102" width="303" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{observacion}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="105" y="42" width="124" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="105" y="42" width="145" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.util.Date"><![CDATA[$F{fecha}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="372" y="0" width="109" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="372" y="0" width="183" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{cedula}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="372" y="20" width="183" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="372" y="20" width="183" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{tecnico}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="372" y="40" width="183" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="372" y="40" width="183" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
@@ -219,70 +219,70 @@ AND c.estado = 'Activado']]>
 				<reportElement x="0" y="126" width="555" height="1"/>
 			</line>
 			<staticText>
-				<reportElement x="0" y="22" width="105" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="22" width="105" height="20"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Mantenimiento:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="2" width="105" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="2" width="105" height="20"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Tipo Mantenimiento:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="82" width="105" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="82" width="105" height="20"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Descripción:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="62" width="105" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="62" width="105" height="20"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Estado:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="102" width="105" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="102" width="105" height="20"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Observación:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="42" width="105" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="42" width="105" height="20"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Fecha:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="267" y="0" width="105" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="267" y="0" width="105" height="20"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Cédula Técnico:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="267" y="20" width="105" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="267" y="20" width="105" height="20"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Técnico:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="267" y="40" width="105" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="267" y="40" width="105" height="20"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Empresa:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="105" y="2" width="124" height="20"/>
+				<reportElement stretchType="RelativeToTallestObject" x="105" y="2" width="145" height="20"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
