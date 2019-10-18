@@ -30,9 +30,15 @@ WHERE
 		<band height="50"/>
 	</pageHeader>
 	<columnHeader>
-		<band height="34">
+		<band height="22">
 			<staticText>
 				<reportElement x="21" y="2" width="67" height="20"/>
+				<box leftPadding="4">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
@@ -40,6 +46,12 @@ WHERE
 			</staticText>
 			<staticText>
 				<reportElement x="88" y="2" width="147" height="20"/>
+				<box leftPadding="4">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
@@ -47,6 +59,12 @@ WHERE
 			</staticText>
 			<staticText>
 				<reportElement x="235" y="2" width="153" height="20"/>
+				<box leftPadding="4">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
@@ -54,25 +72,28 @@ WHERE
 			</staticText>
 			<staticText>
 				<reportElement x="388" y="2" width="167" height="20"/>
+				<box leftPadding="4">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Fecha Modificación]]></text>
 			</staticText>
-			<line>
-				<reportElement x="0" y="26" width="555" height="1"/>
-			</line>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="32" splitType="Stretch">
+		<band height="21" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
 				<reportElement stretchType="RelativeToTallestObject" x="21" y="0" width="67" height="20"/>
-				<box leftPadding="0">
-					<topPen lineWidth="0.0" lineStyle="Double"/>
-					<leftPen lineWidth="0.0" lineStyle="Double"/>
-					<bottomPen lineWidth="0.0" lineStyle="Double"/>
-					<rightPen lineWidth="0.0" lineStyle="Double"/>
+				<box leftPadding="4">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement>
 					<font size="12"/>
@@ -81,11 +102,11 @@ WHERE
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement stretchType="RelativeToTallestObject" x="235" y="0" width="153" height="20"/>
-				<box leftPadding="0">
-					<topPen lineWidth="0.0" lineStyle="Double"/>
-					<leftPen lineWidth="0.0" lineStyle="Double"/>
-					<bottomPen lineWidth="0.0" lineStyle="Double"/>
-					<rightPen lineWidth="0.0" lineStyle="Double"/>
+				<box leftPadding="4">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement>
 					<font size="12"/>
@@ -94,27 +115,24 @@ WHERE
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement stretchType="RelativeToTallestObject" x="388" y="0" width="167" height="20"/>
-				<box leftPadding="0">
-					<topPen lineWidth="0.0" lineStyle="Double"/>
-					<leftPen lineWidth="0.0" lineStyle="Double"/>
-					<bottomPen lineWidth="0.0" lineStyle="Double"/>
-					<rightPen lineWidth="0.0" lineStyle="Double"/>
+				<box leftPadding="4">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression class="java.util.Date"><![CDATA[$F{fecha}]]></textFieldExpression>
 			</textField>
-			<line>
-				<reportElement x="1" y="25" width="555" height="1"/>
-			</line>
 			<textField isStretchWithOverflow="true">
 				<reportElement stretchType="RelativeToTallestObject" x="88" y="0" width="147" height="20"/>
-				<box leftPadding="0">
-					<topPen lineWidth="0.0" lineStyle="Double"/>
-					<leftPen lineWidth="0.0" lineStyle="Double"/>
-					<bottomPen lineWidth="0.0" lineStyle="Double"/>
-					<rightPen lineWidth="0.0" lineStyle="Double"/>
+				<box leftPadding="4">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement>
 					<font size="12"/>
